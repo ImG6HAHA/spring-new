@@ -1,31 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f31ea8f-c0c9-4d3a-bae1-61c369a1a061" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/beanAOP2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/aopxml/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/aopxml/BookProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/config/AopConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/spring5/testdemo/TestAnno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/testdemo/TestAnno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/spring5/testdemo/TestAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/testdemo/TestAop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/spring5/xmlconfig/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/config/SpringConfig.java" afterDir="false" />
+    <list default="true" id="0f31ea8f-c0c9-4d3a-bae1-61c369a1a061" name="Changes" comment="除webflux以外完结">
+      <change afterPath="$PROJECT_DIR$/src/beanEvent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/event/MyEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/event/listener/MyListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/event/service/MyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/spring5/event/test/TestEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/com/atguigu/spring5/transactional/dao/UserDao.java" root0="FORCE_HIGHLIGHTING" />
@@ -55,7 +68,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/spring-test-5.2.6.RELEASE.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/atguigu/spring5/event2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.26436782" />
@@ -66,6 +79,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\spring\src\com\atguigu\spring5\event2" />
+      <recent name="F:\spring\src\com\atguigu\spring5" />
       <recent name="F:\spring\lib" />
       <recent name="F:\spring\src\com\atguigu\spring5\aopxml" />
     </key>
@@ -73,19 +88,16 @@
       <recent name="F:\spring\src\AOPxml" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JTest5.test1">
-    <configuration name="JTest4.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestEvent.test1">
+    <configuration name="MyService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring5.event.service.MyService" />
       <module name="spring5-demo1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.spring5.testdemo.*" />
+          <option name="PATTERN" value="com.atguigu.spring5.event.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.spring5.testdemo" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring5.testdemo.JTest4" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,7 +118,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTransactional.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAnno.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring5-demo1" />
       <extension name="coverage">
         <pattern>
@@ -115,40 +127,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.atguigu.spring5.testdemo" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring5.testdemo.TestTransactional" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring5.testdemo.TestAnno" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTransactional.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestEvent.test1 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring5-demo1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.spring5.testdemo.*" />
+          <option name="PATTERN" value="com.atguigu.spring5.event2.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.spring5.testdemo" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring5.testdemo.TestTransactional" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="PACKAGE_NAME" value="com.atguigu.spring5.event2.test" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring5.event2.test.TestEvent" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTransactional.testGenericApplicationContext" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestEvent.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring5-demo1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.spring5.testdemo.*" />
+          <option name="PATTERN" value="com.atguigu.spring5.event.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.spring5.testdemo" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring5.testdemo.TestTransactional" />
-      <option name="METHOD_NAME" value="testGenericApplicationContext" />
+      <option name="PACKAGE_NAME" value="com.atguigu.spring5.event.test" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.spring5.event.test.TestEvent" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestEvent.test1" />
+        <item itemvalue="JUnit.TestEvent.test1 (1)" />
+        <item itemvalue="JUnit.TestAnno.test1" />
+        <item itemvalue="Application.MyService" />
         <item itemvalue="JUnit.JTest5.test1" />
-        <item itemvalue="JUnit.TestTransactional.test1" />
-        <item itemvalue="JUnit.JTest4.test1" />
-        <item itemvalue="JUnit.TestTransactional.testGenericApplicationContext" />
-        <item itemvalue="JUnit.TestTransactional.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +194,18 @@
       <workItem from="1650903227412" duration="251000" />
       <workItem from="1650903506578" duration="3927000" />
       <workItem from="1650960015146" duration="12014000" />
+      <workItem from="1650992600283" duration="414000" />
+      <workItem from="1651494500257" duration="167000" />
+      <workItem from="1651496044100" duration="5006000" />
     </task>
+    <task id="LOCAL-00001" summary="除webflux以外完结">
+      <created>1650992756302</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1650992756302</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,8 +223,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="除webflux以外完结" />
+    <option name="LAST_COMMIT_MESSAGE" value="除webflux以外完结" />
   </component>
 </project>
